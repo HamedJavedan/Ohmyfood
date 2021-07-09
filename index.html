@@ -5,61 +5,90 @@
         <title>OhMyFood</title>
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Shrikhand&display=swap" rel="stylesheet">
     </head>
-    <body class="container">
+    <body>
         <div class="nav">
-            <div class="nav-logo">
-                <a href="#" class="nav-logo___img"><img src="./Projet-3-ohmyfood-EN/images/logo/ohmyfood@2x.svg" alt="ohmyfood"></a>
-            </div>
+            <h1 class="nav__logo">Ohmyfood</h1>
         </div>
-        <div class="choice-list-group">
+        <div class="choice-list-group container">
             <div class="choice-list-group__item">
                 <span class="choice-list-group__number">1</span>
                 <span class="choice-list-group__icon"><i class="fas fa-mobile-alt"></i></span>
-                    Chose a restaurant
+                  <b>Chose a restaurant</b>
             </div>
             <div class="choice-list-group__item">
                 <span class="choice-list-group__number">2</span>
                 <span class="choice-list-group__icon"><i class="fas fa-list-ul"></i></span>
-                    Create your menu
+                   <b>Create your menu</b>
             </div>
             <div class="choice-list-group__item choice-list-group__item--highlight">
                 <span class="choice-list-group__number">3</span>
                <span class="choice-list-group__icon"><i class="fas fa-store"></i></span> 
-                    Go enjoy it at the restaurant
+                    <b>Go enjoy it at the restaurant</b>
             </div>
-            <div class="col">
-                <div class="col-card">
-                    <img class="col-card__img col-card__img--size" src="./Projet-3-ohmyfood-EN/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="the-full-palette">
-                    <div class="col-card__body">
-                      <h4 class="col-card__title">The Full Palette</h4>
-                      <i class="far fa-heart fa-lg col-card__icon"></i>
-                      <p class="col-card__passage">New York</p>
+        </div>
+        <div class="card-group container">
+            <div class="card">
+                <img class="card__img" src="./Projet-3-ohmyfood-EN/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="the-full-palette">
+                <div class="card__body">
+                    <h4 class="card__title">The Full Palette</h4>
+                    <div class="heart">
+                        <input class="heart__input--primary" type="checkbox" name="my-checkbox" id="heart-1">
+                        <label class="heart__label--primary" for="heart-1"> <i class="far fa-heart fa-lg card__icon"></i></label>
                     </div>
+                    <div class="heart">
+                        <input class="heart__input--secondry" type="checkbox" name="my-checkbox" id="heart-2">
+                        <label class="heart__label--secondry" for="heart-2"> <i class="fas fa-heart fa-lg card__icon"></i></label>
+                    </div>
+                    <p class="card__passage">New York</p>
                 </div>
-                <div class="col-card">
-                    <img class="col-card__img col-card__img--size" src="./Projet-3-ohmyfood-EN/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="the-enchanted-plate">
-                    <div class="col-card__body">
-                      <h4 class="col-card__title">The Enchanted Plate</h4>
-                      <i class="far fa-heart fa-lg col-card__icon"></i>
-                      <p class="col-card__passage">New York</p>
+            </div>
+            <div class="card">
+                <img class="card__img" src="./Projet-3-ohmyfood-EN/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="the-enchanted-plate">
+                <div class="card__body">
+                    <h4 class="card__title">The Enchanted Plate</h4>
+                    <div class="heart">
+                        <input class="heart__input--primary" type="checkbox" name="my-checkbox" id="heart-3">
+                        <label class="heart__label--primary" for="heart-3"> <i class="far fa-heart fa-lg card__icon"></i></label>
                     </div>
+                    <div class="heart">
+                        <input class="heart__input--secondry" type="checkbox" name="my-checkbox" id="heart-4">
+                        <label class="heart__label--secondry" for="heart-4"> <i class="fas fa-heart fa-lg card__icon"></i></label>
+                    </div>
+                    <p class="card__passage">New York</p>
                 </div>
-                <div class="col-card">
-                    <img class="col-card__img col-card__img--size" src="./Projet-3-ohmyfood-EN/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="bastille">
-                    <div class="col-card__body">
-                      <h4 class="col-card__title">Bastille</h4>
-                      <i class="far fa-heart fa-lg col-card__icon"></i>
-                      <p class="col-card__passage">New York</p>
+            </div>
+            <div class="card">
+                <img class="card__img" src="./Projet-3-ohmyfood-EN/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="bastille">
+                <div class="card__body">
+                    <h4 class="card__title">Bastille</h4>
+                    <div class="heart">
+                        <input class="heart__input--primary" type="checkbox" name="my-checkbox" id="heart-5">
+                        <label class="heart__label--primary" for="heart-5"> <i class="far fa-heart fa-lg card__icon"></i></label>
                     </div>
+                    <div class="heart">
+                        <input class="heart__input--secondry" type="checkbox" name="my-checkbox" id="heart-6">
+                        <label class="heart__label--secondry" for="heart-6"> <i class="fas fa-heart fa-lg card__icon"></i></label>
+                    </div>
+                    <p class="card__passage">New York</p>
                 </div>
-                <div class="col-card">
-                    <img class="col-card__img col-card__img--size" src="./Projet-3-ohmyfood-EN/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="le-gourMand">
-                    <div class="col-card__body">
-                      <h4 class="col-card__title">Le GourMand</h4>
-                      <i class="far fa-heart fa-lg col-card__icon"></i>
-                      <p class="col-card__passage">New York</p>
+            </div>
+            <div class="card">
+                <img class="card__img" src="./Projet-3-ohmyfood-EN/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="le-gourMand">
+                <div class="card__body">
+                    <h4 class="card__title">Le GourMand</h4>
+                    <div class="heart">
+                        <input class="heart__input--primary" type="checkbox" name="my-checkbox" id="heart-7">
+                        <label class="heart__label--primary" for="heart-7"> <i class="far fa-heart fa-lg card__icon"></i></label>
                     </div>
+                    <div class="heart">
+                        <input class="heart__input--secondry" type="checkbox" name="my-checkbox" id="heart-8">
+                        <label class="heart__label--secondry" for="heart-8"> <i class="fas fa-heart fa-lg card__icon"></i></label>
+                    </div>
+                    <p class="card__passage">New York</p>
                 </div>
             </div>
         </div>
