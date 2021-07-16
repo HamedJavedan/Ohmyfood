@@ -1,0 +1,29 @@
+.heart{
+    position: absolute;
+    right: 24px;
+    bottom: 29px;
+    font-size: 18px;
+    .heart__input{
+        display: none;
+        &:checked + .heart__label {
+            background: linear-gradient(200deg, $color-primary, $color-secondary);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -moz-text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+
+            .heart__icon-inactive{
+                display: none;
+            }
+
+            .heart__icon-active{
+                display: inline;
+            }
+        }
+    }    
+    .heart__icon-active{
+        display: none;
+    }
+}

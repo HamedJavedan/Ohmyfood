@@ -1,0 +1,26 @@
+.nav{
+    display: inline;
+    width: 100%;
+    text-align: center;
+
+    .nav__logo{
+        font-family: $font-titles;
+        font-size: 30px;
+        margin: 14px 0px 5px 0px;
+    }
+
+    .nav__location{
+        display: flex;
+        justify-content: center;
+
+        .nav__location-icon{
+            padding: 0px 0px 0px 0px;
+            margin: 0px 15px 0px -40px;
+        }
+
+        .nav__location-text{
+            padding: 0px 0px 0px 0px;
+            margin: 0px 0px 0px 0px;
+        }
+    }
+}
