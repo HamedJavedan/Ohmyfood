@@ -1,0 +1,48 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+.container {
+  max-width: 500px;
+  padding: 15px;
+  margin: auto;
+}
+
+.header-image {
+  background-image: url("https://github.com/HamedJavedan/ohmyfood/blob/main/Projet-3-ohmyfood-EN/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-size: cover;
+  height: 250px;
+}
+
+.bg-grey {
+  background-color: #F8F8F8;
+}
+
+.border-radius-top {
+  border-radius: 20px 20px 0 0;
+}
+
+.mt-n3 {
+  margin-top: -50px;
+}
+
+.menu-item {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.menu-item__heading {
+  margin: 0;
+}
+
+.menu-item__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=bastille.css.map */

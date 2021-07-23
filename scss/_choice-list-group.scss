@@ -5,10 +5,10 @@
 	
 	.choice-list-group__item {
 		position: relative;
-		padding: 20px;
-		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		padding: 28px 20px;
+		box-shadow: 0 4px 9px 0 rgba(0,0,0,0.2);
         margin-bottom: 20px;
-        border-radius: 15px;
+        border-radius: 25px;
         background-color: rgb(246,246,246);
 		
 		&.choice-list-group__item--highlight {

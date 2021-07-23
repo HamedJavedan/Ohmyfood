@@ -1,16 +1,27 @@
 .menu-explorer{
-    padding-top: 17px;
-    padding-bottom: 53px;
     text-align: center;
 
     .menu-explorer__title{
         margin-left: -15px;
         padding-bottom: 18px;
+        margin-top: 5px;
     }
     .menu-explorer__text{
         padding-left: 10px;
         padding-right: 0px;
-        font-size: 18px;
-
+        padding-bottom: 29px;
+        font-size: 19px;
+    }
+    .menu-explorer__btn{
+        color: white;
+        background: linear-gradient(0deg, $color-primary, $color-secondary);
+        padding: 14px 26px;
+        font-size: 17px;
+        border-radius: 25px;
+        border: none;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        cursor: pointer;
+        margin-bottom: 7px;
+        text-decoration: none;
     }
 }
