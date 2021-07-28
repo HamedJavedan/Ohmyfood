@@ -19,6 +19,7 @@ body {
 .bg-grey-2 {
   background-color: #f6f6f6;
   margin-bottom: 45px;
+  padding: 33px 0px 70px 0px;
 }
 
 .py {
@@ -125,6 +126,7 @@ body {
 
 .choice-list-group .choice-list-group__item.choice-list-group__item--highlight .choice-list-group__icon {
   color: #9356DC;
+  padding: 0px 20px;
 }
 
 .choice-list-group .choice-list-group__number {
@@ -138,7 +140,7 @@ body {
 
 .choice-list-group .choice-list-group__icon {
   color: #7e7e7e;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 .menu-explorer {
@@ -154,7 +156,7 @@ body {
 .menu-explorer .menu-explorer__text {
   padding-left: 10px;
   padding-right: 0px;
-  padding-bottom: 29px;
+  padding-bottom: 45px;
   font-size: 19px;
 }
 
@@ -169,7 +171,6 @@ body {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  margin-bottom: 7px;
   text-decoration: none;
 }
 
