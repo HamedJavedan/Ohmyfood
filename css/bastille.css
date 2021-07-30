@@ -36,13 +36,13 @@ body {
 .title {
   font-family: "Shrikhand", cursive;
   font-size: 27px;
-  margin: 14px 0px 5px 0px;
+  margin: 16px 0px 30px 0px;
 }
 
 .heart {
   position: absolute;
-  right: 35px;
-  top: 35px;
+  right: 39px;
+  top: 39px;
   font-size: 18px;
 }
 
@@ -86,23 +86,35 @@ body {
   margin-top: -50px;
 }
 
+.entrees {
+  padding-bottom: 6px;
+}
+
 .underline {
   background-color: #99E2D0;
   height: 3px;
   width: 40px;
   position: absolute;
-  top: 107px;
+  top: 125px;
   border-radius: 20%;
 }
 
 .menu-item {
   background: white;
-  border-radius: 20px;
+  border-radius: 16px;
   padding: 15px;
   margin-bottom: 15px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   position: relative;
+}
+
+.menu-item .menu-item__heading {
+  margin: -3px 0px 0px 0px;
+}
+
+.menu-item .menu-item__body {
+  margin: 4px 0px -4px 0px;
 }
 
 .menu-item .checkmark-bg {
@@ -127,12 +139,20 @@ body {
   right: 0px;
   top: 25px;
   width: 15pxpx;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 1000ms;
+  transition: -webkit-transform 1000ms;
+  transition: transform 1000ms;
+  transition: transform 1000ms, -webkit-transform 1000ms;
+  color: white;
 }
 
 .menu-item .checkmaek-icon:hover {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  -o-transition-duration: 0.3s;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  position: absolute;
+  right: 20px;
 }
 
 .menu-item__heading {

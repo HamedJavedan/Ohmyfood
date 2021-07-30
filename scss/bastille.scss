@@ -34,13 +34,13 @@ body {
   .title{
     font-family: $font-titles;
     font-size: 27px;
-    margin: 14px 0px 5px 0px;
+    margin: 16px 0px 30px 0px;
   }
 
   .heart{
     position: absolute;
-    right: 35px;
-    top: 35px;
+    right: 39px;
+    top: 39px;
     font-size: 18px;
     .heart__input{
         display: none;
@@ -84,22 +84,34 @@ body {
     margin-top: -50px;
   }
 
+  .entrees{
+    padding-bottom: 6px;
+  }
+
   .underline{
     background-color: $color-tertiary;
     height: 3px;
     width: 40px;
     position: absolute;
-    top: 107px;
+    top: 125px;
     border-radius: 20%;
   }
   
   .menu-item {
     background: white;
-    border-radius: 20px;
+    border-radius: 16px;
     padding: 15px;
     margin-bottom: 15px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     position: relative;
+
+    .menu-item__heading{
+      margin: -3px 0px 0px 0px;
+    }
+
+    .menu-item__body{
+      margin: 4px 0px -4px 0px;
+    }    
 
     .checkmark-bg{
       width: 1px;
@@ -122,11 +134,16 @@ body {
       right: 0px;
       top: 25px;
       width: 15pxpx;
+      transform: rotate(0deg);
+      transition: transform 1000ms;
+      color: white;
     }
 
     .checkmaek-icon:hover {
-      transform: rotate(180deg);
-      -o-transition-duration: 0.3s;
+      transform: rotate(360deg);
+      position: absolute;
+      right: 20px;
+      
     }
 
     &__heading {
