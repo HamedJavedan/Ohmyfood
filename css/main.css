@@ -1,3 +1,101 @@
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes scale {
+  to {
+    -webkit-transform: scaleX(2) scaleY(2);
+            transform: scaleX(2) scaleY(2);
+  }
+}
+
+@keyframes scale {
+  to {
+    -webkit-transform: scaleX(2) scaleY(2);
+            transform: scaleX(2) scaleY(2);
+  }
+}
+
+.loader-bg {
+  -webkit-animation-name: fadeOut;
+          animation-name: fadeOut;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loader {
+  border: 15px solid #f3f3f3;
+  border-radius: 35%;
+  border-top: 16px solid #9356DC;
+  border-bottom: 16px solid #99E2D0;
+  border-right: 16px solid #FF79DA;
+  width: 75px;
+  height: 75px;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+
+.scale {
+  -webkit-animation: scale 4s infinite linear;
+          animation: scale 4s infinite linear;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   margin: 0px;
@@ -7,6 +105,58 @@ body {
   padding: 0px 20px 0px 20px;
   max-width: 500px;
   margin: auto;
+}
+
+.container-1 {
+  max-width: 500px;
+  padding: 15px;
+  margin: auto;
+}
+
+.bg-grey-5 {
+  background-color: #f6f6f6;
+  position: relative;
+}
+
+.border-radius-top {
+  border-radius: 40px 40px 0 0;
+}
+
+.mt-n3 {
+  margin-top: -30px;
+}
+
+.title-B {
+  font-family: "Shrikhand", cursive;
+  font-size: 28px;
+  margin: 16px 0px -10px 4px;
+}
+
+.entrees {
+  padding-bottom: 6px;
+  padding-left: 4px;
+  padding-top: 24px;
+}
+
+.underline {
+  background-color: #99E2D0;
+  height: 3px;
+  width: 40px;
+  position: absolute;
+  border-radius: 20%;
+  margin-left: 4px;
+}
+
+.underline__1 {
+  top: 125px;
+}
+
+.underline__2 {
+  top: 437px;
+}
+
+.underline__3 {
+  top: 749px;
 }
 
 .bg-grey {
@@ -63,10 +213,33 @@ body {
   padding-right: 10px;
 }
 
+.back-arrow {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.order-btn {
+  padding: 15px 73px !important;
+}
+
+.mg-bt {
+  margin-bottom: 64px !important;
+}
+
+.margin {
+  margin-bottom: 81px;
+}
+
 .nav {
   display: inline;
   width: 100%;
   text-align: center;
+}
+
+.nav .nav__icon {
+  position: absolute;
+  top: 25px;
+  left: 25px;
 }
 
 .nav .nav__logo {
@@ -185,6 +358,11 @@ body {
   position: relative;
 }
 
+.card .card__link {
+  text-decoration: inherit;
+  color: inherit;
+}
+
 .card .card__img {
   height: 173px;
   border-top-left-radius: 15px;
@@ -255,6 +433,11 @@ body {
   display: none;
 }
 
+.heart-p {
+  right: 39px;
+  top: 39px;
+}
+
 .footer {
   color: white;
   padding-left: 25px;
@@ -268,5 +451,137 @@ body {
 
 .footer .footer__p {
   margin-bottom: -8px;
+}
+
+.header-image-bastille {
+  background-image: url("../Projet-3-ohmyfood-EN/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-size: cover;
+  height: 250px;
+}
+
+.menu-item {
+  background: white;
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 15px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.menu-item .menu-item__heading {
+  margin: -3px 0px 0px -4px;
+  font-size: 17px;
+}
+
+.menu-item .menu-item__body {
+  margin: 4px 5px -4px -4px;
+  font-size: 15px;
+}
+
+.menu-item .checkmark-bg {
+  width: 0px;
+  background: #99E2D0;
+  -webkit-transition: width 1s;
+  transition: width 1s;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-item .checkmark-icon {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  color: white;
+}
+
+.menu-item__heading {
+  margin: 0;
+}
+
+.menu-item__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.menu-item:hover .checkmark-bg {
+  width: 60px;
+}
+
+.menu-item:hover .checkmark-icon {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.menu-item:hover .menu-item__body {
+  margin-right: 65px;
+}
+
+@-webkit-keyframes menu-fade {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(0px, 15px);
+            transform: translate(0px, 15px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes menu-fade {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(0px, 15px);
+            transform: translate(0px, 15px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.menu-item {
+  -webkit-animation-name: menu-fade;
+          animation-name: menu-fade;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.menu-item-1 {
+  -webkit-animation-delay: 0.0s;
+          animation-delay: 0.0s;
+}
+
+.menu-item-2 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.menu-item-3 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 /*# sourceMappingURL=main.css.map */

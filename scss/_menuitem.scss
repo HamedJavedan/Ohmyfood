@@ -1,0 +1,67 @@
+.menu-item {
+    background: white;
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+    .menu-item__heading{
+      margin: -3px 0px 0px -4px;
+      font-size: 17px;
+    }
+
+    .menu-item__body{
+      margin: 4px 5px -4px -4px;
+      font-size: 15px;
+      
+    } 
+    
+    .checkmark-bg{
+        width: 0px;
+        background: $color-tertiary;
+        transition: width 1s;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    .checkmark-icon{
+        transform: rotate(360deg);
+        transition: transform 1s;
+        color: white;
+    }
+  
+
+    &__heading {
+        margin: 0;
+    }
+      
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }  
+}
+
+.menu-item:hover { 
+
+    .checkmark-bg {
+        width: 60px;
+    }
+
+    .checkmark-icon {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    .menu-item__body{
+        margin-right: 65px;
+    }
+}

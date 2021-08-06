@@ -7,6 +7,11 @@
     width: 100%;
     position: relative;
 
+    .card__link{
+        text-decoration: inherit;
+        color: inherit;
+    }
+
     .card__img{
         height: 173px;
         border-top-left-radius: 15px;

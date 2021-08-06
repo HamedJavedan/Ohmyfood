@@ -3,6 +3,12 @@
     width: 100%;
     text-align: center;
 
+    .nav__icon{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+      }
+
     .nav__logo{
         font-family: $font-titles;
         font-size: 30px;
