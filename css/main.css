@@ -1,18 +1,26 @@
 @-webkit-keyframes fadeOut {
-  from {
+  0% {
     opacity: 1;
   }
-  to {
+  99% {
+    z-index: 10;
+  }
+  100% {
     opacity: 0;
+    z-index: -1;
   }
 }
 
 @keyframes fadeOut {
-  from {
+  0% {
     opacity: 1;
   }
-  to {
+  99% {
+    z-index: 10;
+  }
+  100% {
     opacity: 0;
+    z-index: -1;
   }
 }
 
@@ -152,11 +160,19 @@ body {
 }
 
 .underline__2 {
-  top: 437px;
+  top: 440px;
 }
 
 .underline__3 {
-  top: 749px;
+  top: 755px;
+}
+
+.underline__2e {
+  top: 524px;
+}
+
+.underline__3e {
+  top: 838px;
 }
 
 .bg-grey {
@@ -347,6 +363,11 @@ body {
   text-decoration: none;
 }
 
+.menu-explorer__btn:hover {
+  -webkit-box-shadow: 6px 7px 8px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 6px 7px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
 .card {
   background-color: white;
   margin-right: 10px;
@@ -427,10 +448,15 @@ body {
 
 .heart .heart__input:checked + .heart__label .heart__icon-active {
   display: inline;
+  opacity: 1;
 }
 
-.heart .heart__icon-active {
-  display: none;
+.heart__icon-active {
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  color: transparent;
+  width: 0;
 }
 
 .heart-p {
@@ -453,8 +479,31 @@ body {
   margin-bottom: -8px;
 }
 
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .header-image-bastille {
   background-image: url("../Projet-3-ohmyfood-EN/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-size: cover;
+  height: 250px;
+}
+
+.header-image-enchanted {
+  background-image: url("../Projet-3-ohmyfood-EN/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-size: cover;
+  height: 250px;
+}
+
+.header-image-fullplate {
+  background-image: url("../Projet-3-ohmyfood-EN/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-size: cover;
+  height: 250px;
+}
+
+.header-image-gourmand {
+  background-image: url("../Projet-3-ohmyfood-EN/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
   background-size: cover;
   height: 250px;
 }
@@ -471,14 +520,29 @@ body {
   cursor: pointer;
 }
 
-.menu-item .menu-item__heading {
-  margin: -3px 0px 0px -4px;
+.menu-item .menu-item__body {
+  width: 100%;
+  padding: 15px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu-item .menu-item__body .menu-item__heading {
   font-size: 17px;
 }
 
-.menu-item .menu-item__body {
-  margin: 4px 5px -4px -4px;
+.menu-item .menu-item__body .menu-item__content {
+  margin: 4px 5px -4px 1px;
   font-size: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .menu-item .checkmark-bg {
@@ -486,7 +550,6 @@ body {
   background: #99E2D0;
   -webkit-transition: width 1s;
   transition: width 1s;
-  position: absolute;
   right: 0;
   top: 0;
   bottom: 0;
@@ -515,7 +578,7 @@ body {
   margin: 0;
 }
 
-.menu-item__body {
+.menu-item__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -526,16 +589,12 @@ body {
 }
 
 .menu-item:hover .checkmark-bg {
-  width: 60px;
+  width: 75px;
 }
 
 .menu-item:hover .checkmark-icon {
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
-}
-
-.menu-item:hover .menu-item__body {
-  margin-right: 65px;
 }
 
 @-webkit-keyframes menu-fade {
@@ -573,15 +632,36 @@ body {
 .menu-item-1 {
   -webkit-animation-delay: 0.0s;
           animation-delay: 0.0s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px;
 }
 
 .menu-item-2 {
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px;
 }
 
 .menu-item-3 {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px;
+}
+
+.menu-item-4 {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px;
 }
 /*# sourceMappingURL=main.css.map */
