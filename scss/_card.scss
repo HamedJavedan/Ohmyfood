@@ -7,10 +7,6 @@
     width: 100%;
     position: relative;
 
-    .card__link{
-        text-decoration: inherit;
-        color: inherit;
-    }
 
     .card__img{
         height: 173px;
@@ -37,6 +33,7 @@
         .card__title{
             font-size: 18px;
             margin: 0px;
+            cursor: pointer;
         }
         .card__passage{
             font-size: 15px;

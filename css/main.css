@@ -379,11 +379,6 @@ body {
   position: relative;
 }
 
-.card .card__link {
-  text-decoration: inherit;
-  color: inherit;
-}
-
 .card .card__img {
   height: 173px;
   border-top-left-radius: 15px;
@@ -411,6 +406,7 @@ body {
 .card .card__body .card__title {
   font-size: 18px;
   margin: 0px;
+  cursor: pointer;
 }
 
 .card .card__body .card__passage {
@@ -480,7 +476,7 @@ body {
 }
 
 .link {
-  text-decoration: none;
+  text-decoration: inherit;
   color: inherit;
 }
 
@@ -535,10 +531,13 @@ body {
 
 .menu-item .menu-item__body .menu-item__heading {
   font-size: 17px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .menu-item .menu-item__body .menu-item__content {
-  margin: 4px 5px -4px 1px;
+  margin: 4px 23px -4px 1px;
   font-size: 15px;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -578,14 +577,10 @@ body {
   margin: 0;
 }
 
-.menu-item__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.menu-item .menu-item__price {
   position: relative;
+  right: 22px;
+  top: 38px;
 }
 
 .menu-item:hover .checkmark-bg {

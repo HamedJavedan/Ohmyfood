@@ -17,10 +17,13 @@
         
         .menu-item__heading{
         font-size: 17px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
         }
 
         .menu-item__content{
-        margin: 4px 5px -4px 1px;
+        margin: 4px 23px -4px 1px;
         font-size: 15px;
         text-overflow: ellipsis;
         overflow: hidden;
@@ -50,12 +53,13 @@
     &__heading {
         margin: 0;
     }
-      
-    &__content {
-        display: flex;
-        justify-content: space-between;
+       
+
+    .menu-item__price{
         position: relative;
-    }  
+        right: 22px;
+        top: 38px;
+    }
 }
 
 .menu-item:hover { 
