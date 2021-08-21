@@ -403,6 +403,11 @@ body {
   padding: 10px 0px 0px 12px;
 }
 
+.card .card__body .card-link {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 .card .card__body .card__title {
   font-size: 18px;
   margin: 0px;
